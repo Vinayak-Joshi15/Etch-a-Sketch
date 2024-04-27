@@ -1,0 +1,50 @@
+#right button {
+    display: flex;
+    border: 1px solid black;
+    background-color: white;
+    padding: 0px;
+    margin: 0px;
+    height:35px;
+    width:35px;
+}
+
+#left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 300px;
+    border: 1px solid black;
+}
+
+#right{
+    display: flex;
+    flex-direction: column;
+    flex: 6;
+    height: auto;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    display: flex;
+}
+
+.everything{
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    background-color: #E5E7EB;
+}
+
+html{
+    background-color: #E5E7EB;
+}
