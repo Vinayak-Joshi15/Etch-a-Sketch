@@ -1,21 +1,36 @@
-#right button {
+#right .canvas .row .block {
     display: flex;
     border: 1px solid black;
     background-color: white;
     padding: 0px;
     margin: 0px;
-    height:35px;
+    height:34px;
     width:35px;
+}
+
+.black {
+    background-color: black;
 }
 
 #left{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     height: 500px;
     width: 300px;
     border: 1px solid black;
+}
+
+#left button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    margin: 0;
+    border: 1px solid black;
+    height: 50px;
+    width: 100px;
 }
 
 #right{
@@ -48,3 +63,4 @@
 html{
     background-color: #E5E7EB;
 }
+
