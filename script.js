@@ -39,6 +39,7 @@ createCanvas(num);
 
 const clear = document.createElement("button");
 clear.textContent = "Clear";
+clear.classList = 'change';
 left.appendChild(clear);
 
 function clearAll(){
@@ -51,6 +52,7 @@ clear.addEventListener('click',clearAll);
 
 const erase = document.createElement("button");
 erase.textContent = "Erase";
+erase.classList = 'change';
 left.appendChild(erase);
 
 function eraser(){
@@ -61,12 +63,26 @@ erase.addEventListener('click',eraser);
 
 const random = document.createElement("button");
 random.textContent = "Random";
+random.classList = 'change';
 left.appendChild(random);
 random.addEventListener('click',colorPicker);
 
 const refresh = document.createElement("button");
 refresh.textContent = "Refresh";
+refresh.classList = 'change';
 left.appendChild(refresh);
+
+const colour = document.createElement("button");
+colour.textContent = "Colour";
+colour.classList = 'change';
+left.appendChild(colour);
+
+function changeColour(){
+    let rgb = prompt("Enter the colour as (R,G,B)");
+    color = "rgb" + rgb;
+}
+
+colour.addEventListener('click',changeColour);
 
 let blocks = document.querySelectorAll('.block');
 
@@ -92,8 +108,7 @@ function restart(){
 
 refresh.addEventListener('click',restart);
 
-
-
 const final = document.createElement("h1");
 final.textContent = "Made by VJ_15";
+
 left.appendChild(final);
